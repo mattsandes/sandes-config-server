@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: greeting-service
+
+# Expondo endpoints do spring actuator
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - '*'
+
+# Criando uma configura��o especifica do projeto
+greeting-service:
+  greeting: "Ciao"
+  default-value: "Mondo"
